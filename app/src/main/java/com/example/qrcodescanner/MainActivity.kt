@@ -3,7 +3,6 @@ package com.example.qrcodescanner
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
-import com.example.qrcodescanner.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 
