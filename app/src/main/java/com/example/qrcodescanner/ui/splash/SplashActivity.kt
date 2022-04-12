@@ -1,4 +1,4 @@
-package com.example.qrcodescanner.ui
+package com.example.qrcodescanner.ui.splash
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -40,7 +40,8 @@ class SplashActivity : AppCompatActivity() {
 
     private fun requestPermissions() {
         ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.CAMERA),
-            CAMERA_PERMISSION_REQUEST_CODE)
+            CAMERA_PERMISSION_REQUEST_CODE
+        )
     }
 
     private fun goToMainActivity() {
