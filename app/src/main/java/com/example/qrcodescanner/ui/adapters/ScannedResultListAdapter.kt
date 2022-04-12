@@ -73,22 +73,22 @@ class ScannedResultListAdapter(
                 resultDialog.show(qrResult)
             }
 
-           /* view.setOnLongClickListener {
+            view.setOnLongClickListener {
                 showDeleteDialog(qrResult, position)
                 return@setOnLongClickListener true
-            }*/
+            }
         }
 
-        /*private fun showDeleteDialog(qrResult: QrResult, position: Int) {
-            AlertDialog.Builder(context, R.style.CustomAlertDialog).setTitle(context.getString(R.string.delete))
-                .setMessage(context.getString(R.string.want_to_delete))
-                .setPositiveButton(context.getString(R.string.delete)) { _, _ ->
+        private fun showDeleteDialog(qrResult: QrResult, position: Int) {
+            AlertDialog.Builder(context, R.style.CustomAlertDialog).setTitle("Delete")
+                .setMessage("Are you sure you want to delete this item?")
+                .setPositiveButton("Delete") { _, _ ->
                     deleteThisRecord(qrResult, position)
                 }
-                .setNegativeButton(context.getString(R.string.cancel)) { dialog, _ ->
+                .setNegativeButton("Cancel") { dialog, _ ->
                     dialog.cancel()
                 }.show()
-        }*/
+        }
 
         private fun deleteThisRecord(qrResult: QrResult, position: Int) {
             dbHelperI.deleteQrResult(qrResult.id!!)

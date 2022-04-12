@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         setBottomViewListener()
         setViewPagerListener()
 
-        var qrResult = QrResult(result = "test text",resultType = "text",favourite = false,calendar = Calendar.getInstance())
-        QrResultDataBase.getAppDatabase(this)?.getQrDao()?.insertQrResult(qrResult)
+        /*var qrResult = QrResult(result = "test text",resultType = "text",favourite = false,calendar = Calendar.getInstance())
+        QrResultDataBase.getAppDatabase(this)?.getQrDao()?.insertQrResult(qrResult)*/
     }
 
     private fun setViewPager() {

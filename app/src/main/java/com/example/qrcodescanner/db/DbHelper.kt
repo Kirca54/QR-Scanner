@@ -4,6 +4,8 @@ import com.example.qrcodescanner.db.database.QrResultDataBase
 import com.example.qrcodescanner.db.entities.QrResult
 import java.util.*
 
+//chrome://inspect/#devices
+//edge://inspect/#devices
 class DbHelper(var qrResultDataBase: QrResultDataBase) : DbHelperI {
 
     override fun insertQRResult(result: String): Int {

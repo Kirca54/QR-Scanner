@@ -38,15 +38,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.038" />
 
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/scannedText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="44dp"
             android:layout_marginEnd="32dp"
             android:gravity="center"
             android:padding="10dp"
+            android:textSize="18dp"
             android:textColor="@color/lightColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -55,80 +57,16 @@
             tools:text="TextView" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/userInfo1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="32dp"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textColor="@color/lightColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/scannedText"
-            tools:text="TextView" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/userInfo2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textColor="@color/lightColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userInfo1"
-            tools:text="TextView" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/userInfo3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="32dp"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textColor="@color/lightColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userInfo2"
-            tools:text="TextView" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/userInfo4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="32dp"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textColor="@color/lightColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userInfo3"
-            tools:text="TextView" />
-
-        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/scannedDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="64dp"
             android:textColor="@color/white"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@+id/userInfo4"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="@+id/userInfo4"
-            app:layout_constraintTop_toBottomOf="@+id/userInfo4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scannedText"
             tools:text="22:10pm - 2019-28-10" />
 
         <androidx.appcompat.widget.AppCompatImageView

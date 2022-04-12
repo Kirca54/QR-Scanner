@@ -58,7 +58,7 @@ class ScannedHistoryFragment : Fragment() {
         mView = inflater.inflate(R.layout.fragment_scanned_history, container, false)
         init()
         setSwipeRefresh()
-        //onClicks()
+        onClicks()
         showListOfResults()
         return mView.rootView
     }
@@ -110,24 +110,23 @@ class ScannedHistoryFragment : Fragment() {
     }
 
 
-   /* private fun onClicks() {
+    private fun onClicks() {
         mView.layoutHeader.removeAll.setOnClickListener {
             showRemoveAllScannedResultDialog()
         }
-    }*/
+    }
 
-   /* private fun showRemoveAllScannedResultDialog() {
-        AlertDialog.Builder(context!!, R.style.CustomAlertDialog).setTitle(getString(R.string.clear_all))
-            .setMessage(getString(R.string.clear_all_result))
-            .setPositiveButton(getString(R.string.clear)) { _, _ ->
+    private fun showRemoveAllScannedResultDialog() {
+        AlertDialog.Builder(context, R.style.CustomAlertDialog).setTitle("Delete")
+            .setMessage("Are you sure you want to delete all records?")
+            .setPositiveButton("Delete All") { _, _ ->
                 clearAllRecords()
             }
-            .setNegativeButton(getString(R.string.cancel)) { dialog, _ ->
+            .setNegativeButton("Cancel") { dialog, _ ->
                 dialog.cancel()
             }.show()
-
     }
-*/
+
     private fun clearAllRecords() {
         when (resultListType) {
             ResultListType.ALL_RESULT -> dbHelperI.deleteAllQRScannedResult()
