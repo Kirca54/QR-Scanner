@@ -5,7 +5,11 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
+import com.example.qrcodescanner.db.database.QrResultDataBase
+import com.example.qrcodescanner.db.entities.QrResult
+import com.example.qrcodescanner.ui.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         setViewPager()
         setBottomViewListener()
         setViewPagerListener()
+
+        var qrResult = QrResult(result = "test text",resultType = "text",favourite = false,calendar = Calendar.getInstance())
+        QrResultDataBase.getAppDatabase(this)?.getQrDao()?.insertQrResult(qrResult)
     }
 
     private fun setViewPager() {

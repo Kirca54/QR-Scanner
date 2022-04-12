@@ -1,10 +1,10 @@
-package com.example.qrcodescanner
+package com.example.qrcodescanner.ui
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.example.qrcodescanner.scanned_history.ScannedHistoryFragment
-import com.example.qrcodescanner.scanner.QrScannerFragment
+import com.example.qrcodescanner.ui.scanned_history.ScannedHistoryFragment
+import com.example.qrcodescanner.ui.scanner.QrScannerFragment
 
 /**
  * Developed by Happy on 6/7/19

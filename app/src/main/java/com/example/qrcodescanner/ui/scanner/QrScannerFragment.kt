@@ -1,4 +1,4 @@
-package com.example.qrcodescanner.scanner
+package com.example.qrcodescanner.ui.scanner
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.qrcodescanner.R
 import kotlinx.android.synthetic.main.fragment_qr_scanner.view.*
-import kotlinx.android.synthetic.main.fragment_qr_scanner.*
 import me.dm7.barcodescanner.zbar.Result
 import me.dm7.barcodescanner.zbar.ZBarScannerView
 
