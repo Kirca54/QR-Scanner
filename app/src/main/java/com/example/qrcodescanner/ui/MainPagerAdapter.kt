@@ -19,11 +19,11 @@ class MainPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
             }
 
             1 -> {
-                ScannedHistoryFragment.newInstance()
+                ScannedHistoryFragment.newInstance(ScannedHistoryFragment.ResultListType.ALL_RESULT)
             }
 
             2 -> {
-                ScannedHistoryFragment.newInstance()
+                ScannedHistoryFragment.newInstance(ScannedHistoryFragment.ResultListType.FAVOURITE_RESULT)
             }
 
             else -> {
